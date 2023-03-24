@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="302.0" prefWidth="344.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.instalacionnueva.controllers.CreateController">
+   <children>
+      <TextField fx:id="TFcompNam" layoutX="180.0" layoutY="33.0" onAction="#addComp" />
+      <TextField fx:id="TFcompCity" layoutX="180.0" layoutY="87.0" />
+      <TextField fx:id="TFcompMaxPart" layoutX="180.0" layoutY="142.0" />
+      <TextField fx:id="TFtype" layoutX="180.0" layoutY="200.0" />
+      <Label fx:id="LTName" layoutX="70.0" layoutY="37.0" text="Name" />
+      <Label fx:id="LBCity" layoutX="70.0" layoutY="91.0" text="City" />
+      <Label fx:id="LBType" layoutX="73.0" layoutY="204.0" text="Type" />
+      <Label fx:id="LBmaxParticipants" layoutX="70.0" layoutY="146.0" text="Max Participants" />
+      <Button fx:id="BTCreate" layoutX="263.0" layoutY="250.0" mnemonicParsing="false" onAction="#addComp" prefWidth="65.0" text="Create" />
+      <Button fx:id="BTback" layoutX="180.0" layoutY="250.0" mnemonicParsing="false" onAction="#exitScene" prefWidth="65.0" text="Back" />
+   </children>
+</AnchorPane>

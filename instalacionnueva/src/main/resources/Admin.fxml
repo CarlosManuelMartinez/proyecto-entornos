@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.instalacionnueva.controllers.AdminController">
+    <ListView fx:id="LVadmin" layoutX="44.0" layoutY="77.0" onMouseClicked="#showClicked" prefHeight="328.0" prefWidth="1026.0" />
+    <Button fx:id="BTcreatecomp" layoutX="1093.0" layoutY="147.0" mnemonicParsing="false" onAction="#createCompetition" prefHeight="25.0" prefWidth="65.0" text="Create " />
+    <Label layoutX="42.0" layoutY="434.0" text="Competition " />
+    <TextField fx:id="TFcompNam" disable="true" layoutX="152.0" layoutY="481.0" />
+    <TextField fx:id="TFcompCity" disable="true" layoutX="152.0" layoutY="523.0" />
+    <TextField fx:id="TFcompMaxPart" disable="true" layoutX="152.0" layoutY="565.0" />
+    <Label layoutX="45.0" layoutY="485.0" text="Name" />
+    <Label layoutX="44.0" layoutY="527.0" text="City " />
+    <Label layoutX="44.0" layoutY="569.0" text="Max participants " />
+    <Button fx:id="BTlogoutadmin" layoutX="1093.0" layoutY="77.0" mnemonicParsing="false" onAction="#editCompetition" prefWidth="65.0" text="Edit" />
+   <Label layoutX="42.0" layoutY="610.0" text="Type " />
+   <TextField fx:id="TFtype" disable="true" layoutX="152.0" layoutY="606.0" />
+   <Button fx:id="BTDelete" layoutX="1093.0" layoutY="111.0" mnemonicParsing="false" onAction="#deleteCompetition" prefWidth="65.0" text="Delete" />
+   <Button fx:id="BTsavePilotPoints" layoutX="1018.0" layoutY="593.0" mnemonicParsing="false" onAction="#savePointsToSelectedPilot" prefHeight="26.0" prefWidth="150.0" text="Save Points" />
+   <Button fx:id="BTsaveChanges" layoutX="42.0" layoutY="642.0" mnemonicParsing="false" onAction="#saveChanges" prefHeight="26.0" prefWidth="260.0" text="Save Changes" visible="false" />
+   <Line endX="1025.0" endY="-3.0517578125E-5" layoutX="143.0" layoutY="460.0" startX="-100.0" />
+   <ListView fx:id="LVpilots" layoutX="432.0" layoutY="499.0" onMouseClicked="#showPilotClicked" prefHeight="199.0" prefWidth="462.0" />
+   <Label layoutX="432.0" layoutY="476.0" text="Pilots" />
+   <TextField fx:id="TFpilotPoints" layoutX="1019.0" layoutY="544.0" />
+   <Label layoutX="912.0" layoutY="506.0" text="Nick" />
+   <Label layoutX="911.0" layoutY="548.0" text="Points" />
+   <Label fx:id="LBpilotNick" layoutX="1019.0" layoutY="506.0" />
+   <Label fx:id="LBloggedUser" layoutX="46.0" layoutY="15.0" text="Label" />
+   <Button fx:id="BTlogOut" layoutX="44.0" layoutY="38.0" mnemonicParsing="false" onAction="#logOut" text="Log Out" />
+</AnchorPane>

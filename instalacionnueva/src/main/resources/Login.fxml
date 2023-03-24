@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="217.0" prefWidth="318.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.instalacionnueva.controllers.LoginController">
+   <TextField fx:id="TFUser" layoutX="141.0" layoutY="41.0" />
+   <PasswordField fx:id="TFPassword" layoutX="141.0" layoutY="101.0" />
+   <Label layoutX="44.0" layoutY="45.0" text="User" />
+   <Label layoutX="45.0" layoutY="105.0" text="Pasword" />
+   <Button fx:id="BTLogin" layoutX="236.0" layoutY="161.0" mnemonicParsing="false" onAction="#toAdminMenu" text="Log in!" />
+</Pane>
